@@ -27,7 +27,7 @@ export function Stack(
         if (justify) style += `justify-content: ${justify};`;
         if (align) style += `align-items: ${align};`;
 
-        return style.length == 0 ? undefined : style;
+        return style.length == 0 ? "" : style;
     }, [justify, align]);
 
     return (
@@ -59,7 +59,7 @@ export function Group(
         if (justify) style += `justify-content: ${justify};`;
         if (align) style += `align-items: ${align};`;
 
-        return style.length == 0 ? undefined : style;
+        return style.length == 0 ? "" : style;
     }, [justify, align]);
 
     return (
